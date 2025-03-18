@@ -34,4 +34,10 @@ app.get("/todo", async (req, res) => {
     }
 })
 
+app.get("/", (req, res) => {
+    res.status(200).json({
+        message: "This is a healthy route."
+    })
+})
+
 export default app;
